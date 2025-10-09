@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anthropologie Product Image Microinteraction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #fcf9f4;
+            color:#151515;
+            line-height: 1.6;
+        }
+
+        h1 {
+            color: #890047;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 32px;
+        }
+
+        h2 {
+            color: #151515;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 26px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 20px;
+            text-transform: uppercase;
+            color: #151515;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        a {
+            color: #2762ed;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .image-row img {
+            width: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>Anthropologie Product Image Microinteraction</h1>
+    <h2>IDM 241 - Ingrid Burger</h2>
+
+    <div class="section">
+        <h3>Original Interface URL</h3>
+        <p><a href="https://www.anthropologie.com/" target="_blank">https://www.anthropologie.com/</a></p>
+    </div>
+
+    <div class="section">
+        <h3>Triggers</h3>
+        <ul>
+            <li>User hovers over the product image or product name.</li>
+            <li>User clicks on the product image or product name.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Rules</h3>
+        <ul>
+            <li>Hover On</li>
+                <ul>
+                    <li>Cursor changes to a finger.</li>
+                    <li>Product image instantly changes to secondary image.</li>
+                    <li>Quickshop bar appears instantly at the bottom of the image:</li>
+                        <ul>
+                            <li>White bar with 80% opacity.</li>
+                            <li>Paragraph-size text reading "Quickshop" centered.</li>
+                            <li>Covers 100% of the width and 10% of the height.</li>
+                        </ul>
+                    <li>Small heart button appears instantly at the top-right of the image:</li>
+                        <ul>
+                            <li>Approximately 20px x 20px.</li>
+                            <li>Positioned with 15px margin from top and right edges.</li>
+                            <li>Circle with 80% opacity and a heart outline centered.</li>
+                        </ul>
+                    <li>Product name text instantly changes color to blue.</li>
+                </ul>
+            <li>Hover Off</li>
+                <ul>
+                    <li>Cursor changes back to default.</li>
+                    <li>Product image reverts to default.</li>
+                    <li>Quickshop bar disappears.</li>
+                    <li>Heart button disappears.</li>
+                    <li>Product name text returns to its default color.</li>
+                </ul>
+            <li>Click</li>
+                <ul>
+                    <li>Clicking the product image navigates the user to the product detail page.</li>
+                </ul>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Feedback</h3>
+        <ul>
+            <li>Visual</li>
+                <ul>
+                    <li>Cursor changes to pointer.</li>
+                    <li>Product images changes to secondary image.</li>
+                    <li>Quickshop bar and heart button appear.</li>
+                    <li>On click, the user navigates to the product detail page.</li>
+                </ul>
+            <li>Audio</li>
+                <ul>
+                    <li>None</li>
+                </ul>
+            <li>Feeling / User Perception</li>
+                <ul>
+                    <li>User sees interactivity and responsiveness of the item.</li>
+                    <li>Visual changes provide confirmation that hover and click actions are recognized.</li>
+                </ul>
+            <li>User feels a sense of interactivity and confirmation from the click.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Loops & Modes</h3>
+        <ul>
+            <li>The microinteraction does not repeat automatically.</li>
+            <li>Hover and click function independently.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>Images</h3>
+        <p>The gif to the left shows the hover microinteraction of the product image. The image in the center shows the default product image state. The image to the right shows the active hover state.</p>
+        <div class="image-row">
+            <img src="images/product-image-hover.gif" alt="Anthropologie Product Image">
+            <img src="images/product-image-default.jpg" alt="Anthropologie Product Image">
+            <img src="images/product-image-active-hover.jpg" alt="Anthropologie Product Image">
+        </div>
+        <p>Clicking the product image would navigate the user to the product detail page.</p>
+    </div>
+</body>
+</html>
