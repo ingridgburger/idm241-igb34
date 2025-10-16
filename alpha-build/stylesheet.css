@@ -1,0 +1,187 @@
+/* FONT */
+@font-face {
+	font-display: swap;
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 100 900;
+	src: url('fonts/dm-sans-variable.ttf') format('truetype');
+}
+
+/* ROOT VARIABLES */
+:root {
+	--white: #ffffff;
+    --black: #000000;
+	--blue: #3D7B92;
+
+	--background-color: var(--white);
+	--foreground-color: var(--black);
+	--text-highlight-color: var(--blue);
+
+	--font-sans-serif: 'DM Sans', Helvetica, Arial, sans-serif;
+
+	--rhythm: 1.5rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+	align-items: center;
+    background-color: var(--background-color);
+    display: flex;
+    font-family: var(--font-sans-serif);
+	justify-content: center;
+	min-height: 100vh;
+	padding: 20px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    color: var(--foreground-color);
+    display: block;
+	max-width: 425px;
+	text-decoration: none;
+    width: 100%;
+}
+
+/* IMAGE CONTAINER */
+.image-container {
+	cursor: pointer;
+	width: 100%;
+	overflow: hidden;
+    position: relative;
+}
+
+.image-container img {
+	display: block;
+	height: auto;
+    width: 100%;
+}
+
+.image-container .image-hover {
+	display: none;
+}
+
+/* QUICKSHOP BAR */
+.quickshop-bar {
+	align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    bottom: 0;
+    display: none;
+    height: 10%;
+    justify-content: center;
+    position: absolute;
+	left: 0;
+	width: 100%;
+}
+
+.quickshop-bar p {
+	color: var(--foreground-color);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+
+.quickshop-bar p:hover {
+	color: var(--text-highlight-color);
+}
+
+/* HEART BUTTON */
+.heart-button {
+	align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    color: var(--foreground-color);
+    display: none;
+    font-size: 14px;
+    height: 25px;
+    justify-content: center;
+    position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 25px;
+}
+
+.heart-button:hover {
+    color: var(--text-highlight-color);
+}
+
+/* PRODUCT INFO */
+.product-info {
+	padding: 15px 0;
+}
+
+.product-name {
+    color: var(--foreground-color);
+    cursor: pointer;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	margin-bottom: 10px;
+}
+
+.color-swatch {
+	border-radius: 50%;
+	border: 2px solid var(--background-color);
+    height: 40px;
+	outline: 1px solid var(--foreground-color);
+    overflow: hidden;
+	margin-top: 10px;
+    width: 40px;
+}
+
+.color-swatch img {
+    height: 100%;
+	object-fit: cover;
+    width: 100%;
+}
+
+/* HOVER EFFECTS */
+
+/* image hover */
+.image-container:hover {
+	cursor: pointer;
+}
+
+.image-container:hover .image-default {
+	display: none;
+}
+
+.image-container:hover .image-hover {
+	display: block;
+}
+
+.image-container:hover .heart-button {
+	display: flex;
+}
+
+.image-container:hover .quickshop-bar {
+	display: flex;
+}
+
+.image-container:hover ~ .product-info .product-name {
+	color: var(--text-highlight-color);
+}
+
+/* product name hover */
+.product-name:hover {
+	color: var(--text-highlight-color);
+}
+
+.product-card:has(.product-name:hover) .image-default {
+	display: none;
+}
+
+.product-card:has(.product-name:hover) .image-hover {
+	display: block;
+}
+
+.product-card:has(.product-name:hover) .heart-button {
+	display: flex;
+}
+
+.product-card:has(.product-name:hover) .quickshop-bar {
+	display: flex;
+}
