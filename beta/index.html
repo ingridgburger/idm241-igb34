@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Merriam-Webster Search Area Microinteractions</title>
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Beta</h1>
+		<h2>Merriam-Webster Search Area Microinteractions</h2>
+		<p>Link to interface: <a href="https://www.merriam-webster.com/" class="link" target="_blank">https://www.merriam-webster.com/</a></p>
+
+		<p>On the Search Area at the top of the screen when the user opens the website, there are three objects:</p>
+		<ul>
+			<li><strong>Object 1</strong> - Toggle between "Dictionary" and "Thesaurus"</li>
+			<li><strong>Object 2</strong> - Search bar</li>
+			<li><strong>Object 3</strong> - Search icon button</li>
+		</ul>
+
+		<h2>Triggers</h2>
+		<div>
+			<h3>Object 1 - Toggle</h3>
+			<ul>
+				<li>Hover On</li>
+				<li>Hover Off</li>
+				<li>Click "Dictionary"</li>
+				<li>Click "Thesaurus"</li>
+			</ul>
+		</div>
+
+		<div>
+			<h3>Object 2 - Search Bar</h3>
+			<ul>
+				<li>Hover On</li>
+				<li>Hover Off</li>
+				<li>Click</li>
+			</ul>
+		</div>
+
+		<div>
+			<h3>Object 3 - Search Icon Button</h3>
+			<ul>
+				<li>Hover On</li>
+				<li>Hover Off</li>
+				<li>Click</li>
+			</ul>
+		</div>
+
+		<h2>Rules</h2>
+		<div>
+			<h3>Object 1 - Toggle</h3>
+			<strong>Hover On</strong>
+			<ul>
+				<li>Cursor changes to a finger.</li>
+				<li>Background fades from navy blue to dark grey-blue.</li>
+			</ul>
+			<strong>Hover Off</strong>
+			<ul>
+				<li>Cursor reverts to default.</li>
+				<li>Background fades from dark grey-blue to navy blue.</li>
+			</ul>
+			<strong>Click "Dictionary" Button</strong>
+			<ul>
+				<li>Background slides left and fades from red to orange (250ms, ease-in-out).</li>
+				<li>Border and search icon color fade from red to orange (250ms, synchronized).</li>
+			</ul>
+			<strong>Click "Thesaurus" Button</strong>
+			<ul>
+				<li>Background slides right and fades from orange to red (250ms, ease-in-out).</li>
+				<li>Border and search icon color fade from orange to red (250ms, synchronized).</li>
+			</ul>
+		</div>
+
+		<div>
+			<h3>Object 2 - Search Bar</h3>
+			<strong>Hover On</strong>
+			<ul>
+				<li>Cursor changes to I-beam.</li>
+				<li>Shadow fades to light grey.</li>
+			</ul>
+			<strong>Hover Off</strong>
+			<ul>
+				<li>Cursor reverts to default.</li>
+				<li>Shadow fades to dark grey.</li>
+			</ul>
+			<strong>Click</strong>
+			<ul>
+				<li>No visual feedback (standard text input behavior).</li>
+			</ul>
+		</div>
+
+		<div>
+			<h3>Object 3 - Search Icon Button</h3>
+			<strong>Hover On</strong>
+			<ul>
+				<li>Cursor changes to a finger.</li>
+			</ul>
+			<strong>Hover Off</strong>
+			<ul>
+				<li>Cursor reverts to default.</li>
+			</ul>
+			<strong>Click</strong>
+			<ul>
+				<li>No visual feedback (executes search).</li>
+			</ul>
+		</div>
+
+		<h2>Feedback</h2>
+		<div>
+			<h3>Object 1 - Toggle</h3>
+			<ul>
+				<li>Color changes and sliding motion provide clear visual feedback.</li>
+			</ul>
+			<h3>Object 2 - Search Bar</h3>
+			<ul>
+				<li>Shadow and cursor feedback guide user interaction.</li>
+			</ul>
+			<h3>Object 3 - Search Icon Button</h3>
+			<ul>
+				<li>Cursor feedback indicates interactivity.</li>
+			</ul>
+		</div>
+
+		<h2>Loops & Modes</h2>
+		<div>
+			<h3>Object 1 - Toggle</h3>
+			<strong>Dictionary Mode (Orange)</strong>
+			<ul>
+				<li>Orange background, border, and search icon.</li>
+				<li>Returns dictionary definitions.</li>
+				<li>Persists until Thesaurus clicked.</li>
+			</ul>
+			<strong>Thesaurus Mode (Red)</strong>
+			<ul>
+				<li>Red background, border, and search icon.</li>
+				<li>Returns synonyms and antonyms.</li>
+				<li>Persists until Dictionary clicked.</li>
+			</ul>
+			<strong>Toggle Behavior</strong>
+			<ul>
+				<li>Unlimited toggles between modes.</li>
+				<li>Animation completes before new input accepted.</li>
+			</ul>
+		</div>
+
+		<div class="images">
+			<img src="images/toggle.gif" alt="Toggle microinteraction">
+			<img src="images/search-bar.gif" alt="Search bar microinteraction">
+		</div>
+	</div>
+</body>
+</html>
