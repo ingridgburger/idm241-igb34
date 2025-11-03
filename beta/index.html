@@ -1,154 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Merriam-Webster Search Area Microinteractions</title>
-	<link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Build - Anthropologie Product Image</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Beta</h1>
-		<h2>Merriam-Webster Search Area Microinteractions</h2>
-		<p>Link to interface: <a href="https://www.merriam-webster.com/" class="link" target="_blank">https://www.merriam-webster.com/</a></p>
+    <div class="description">
+        <h1>Beta Description</h1>
+        <h2>Anthropologie Product Image Card</h2>
+        <h3>IDM 241 - Ingrid Burger</h3>
 
-		<p>On the Search Area at the top of the screen when the user opens the website, there are three objects:</p>
-		<ul>
-			<li><strong>Object 1</strong> - Toggle between "Dictionary" and "Thesaurus"</li>
-			<li><strong>Object 2</strong> - Search bar</li>
-			<li><strong>Object 3</strong> - Search icon button</li>
-		</ul>
+        <div class="section">
+            <h3>Triggers</h3>
+            <ul>
+                <li>Object 1 - Product Image
+                    <ul>
+                        <li>Hover On</li>
+                        <li>Hover Off</li>
+                        <li>Click</li>
+                    </ul>
+                </li>
+                <li>Object 2 - Heart Button
+                    <ul>
+                        <li>Hover On</li>
+                        <li>Hover Off</li>
+                        <li>Click</li>
+                    </ul>
+                </li>
+                <li>Object 3 - Color Swatch Button
+                    <ul>
+                        <li>Hover On</li>
+                        <li>Hover Off</li>
+                        <li>Click</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-		<h2>Triggers</h2>
-		<div>
-			<h3>Object 1 - Toggle</h3>
-			<ul>
-				<li>Hover On</li>
-				<li>Hover Off</li>
-				<li>Click "Dictionary"</li>
-				<li>Click "Thesaurus"</li>
-			</ul>
-		</div>
+        <div class="section">
+            <h3>Rules</h3>
+            <ul>
+                <li> Object 1 - Product Image
+                    <ul>
+                        <li>Hover On
+                            <ul>
+                                <li>Cursor changes to a finger.</li>
+                                <li>Product image fades to secondary image.</li>
+                                <li>Quickshop bar appears slides in from bottom of the image:
+                                    <ul>
+                                        <li>White bar with 80% opacity.</li>
+                                        <li>Text reading "Quickshop" centered.</li>
+                                        <li>Covers 100% of the width and 10% of the height.</li>
+                                    </ul>
+                                </li>
+                                <li>Small heart button scales in at the top-right of the image:
+                                    <ul>
+                                        <li>Approximately 20px x 20px.</li>
+                                        <li>Positioned with 15px margin from top and right edges.</li>
+                                        <li>Circle with 80% opacity and a heart outline centered.</li>
+                                    </ul>
+                                </li>
+                                <li>Product name text instantly changes color to blue.</li>
+                            </ul>
+                        </li>
+                        <li>Hover Off
+                            <ul>
+                                <li>Cursor reverts to default.</li>
+                                <li>Product image reverts to default.</li>
+                                <li>Quickshop bar slides out to bottom.</li>
+                                <li>Heart button scales out.</li>
+                                <li>Product name text color fades to revert to default.</li>
+                            </ul>
+                        </li>
+                        <li>Click
+                            <ul>
+                                <li>Clicking the product image navigates the user to the product detail page.</li>
+                            </ul>
+                        </li>
+                    </li>
+                    </ul>
+                <li> Object 2 - Heart Button
+                    <ul>
+                       <li> Hover On
+                            <ul>
+                                <li>Cursor changes to a finger.</li>
+                                <li>Outline of heart changes from black to blue.</li></li>
+                            </ul>
+                        </li>
+                        <li> Hover Off
+                            <ul>
+                                <li>Cursor reverts to default.</li>
+                                <li>Outline of heart changes from blue to black.</li>
+                            </ul>
+                        </li>
+                        <li> Click
+                            <ul>
+                                <li>The heart outline animates as blue color fills it from the bottom upward, creating a smooth vertical fill effect.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li> Object 3 - Color Swatch Button
+                    <ul>
+                       <li>Hover On
+                            <ul>
+                                <li>Cursor changes to a finger.</li>
+                                <li>Blue outline draws a circle around color swatch.</li>
+                            </ul>
+                        </li>
+                        <li>Hover Off
+                            <ul>
+                                <li>Cursor reverts to default.</li>
+                                <li>If color swatch not selected, blue outline around color swatch changes from blue to black.
+                                <li>If color swatch already selected, black outline around color swatch remains the same.</li>
+                            </ul>
+                        </li>
+                        <li> Click
+                            <ul>
+                                <li>Blue outline around color swatch changes to black outline.
+                                    <ul>
+                                        <li>Black outline draws a circle around color swatch.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-		<div>
-			<h3>Object 2 - Search Bar</h3>
-			<ul>
-				<li>Hover On</li>
-				<li>Hover Off</li>
-				<li>Click</li>
-			</ul>
-		</div>
+        <div class="section">
+            <h3>Feedback</h3>
+            <ul>
+                <li> Object 1 - Product Image
+                    <ul>
+                        <li>Hover On
+                            <ul>
+                                <li>Cursor changes to a finger.</li>
+                                <li>Product image fades to secondary image.</li>
+                                <li>Quickshop bar appears slides in from bottom of the image:
+                                    <ul>
+                                        <li>White bar with 80% opacity.</li>
+                                        <li>Text reading "Quickshop" centered.</li>
+                                        <li>Covers 100% of the width and 10% of the height.</li>
+                                    </ul>
+                                </li>
+                                <li>Small heart button scales in at the top-right of the image:
+                                    <ul>
+                                        <li>Approximately 20px x 20px.</li>
+                                        <li>Positioned with 15px margin from top and right edges.</li>
+                                        <li>Circle with 80% opacity and a heart outline centered.</li>
+                                    </ul>
+                                </li>
+                                <li>Product name text instantly changes color to blue.</li>
+                            </ul>
+                        </li>
+                        <li>Hover Off
+                            <ul>
+                                <li>Cursor reverts to default.</li>
+                                <li>Product image reverts to default.</li>
+                                <li>Quickshop bar slides out to bottom.</li>
+                                <li>Heart button scales out.</li>
+                                <li>Product name text color fades to revert to default.</li>
+                            </ul>
+                        </li>
+                        <li>Click
+                            <ul>
+                                <li>Clicking the product image navigates the user to the product detail page.</li>
+                            </ul>
+                        </li>
+                    </li>
+                    </ul>
+                <li> Object 2 - Heart Button
+                    <ul>
+                       <li> Hover On
+                            <ul>
+                                <li>Cursor changes to a finger.</li>
+                                <li>Outline of heart changes from black to blue.</li></li>
+                            </ul>
+                        </li>
+                        <li> Hover Off
+                            <ul>
+                                <li>Cursor reverts to default.</li>
+                                <li>Outline of heart changes from blue to black.</li>
+                            </ul>
+                        </li>
+                        <li> Click
+                            <ul>
+                                <li>The heart outline animates as blue color fills it from the bottom upward, creating a smooth vertical fill effect.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li> Object 3 - Color Swatch Button
+                    <ul>
+                       <li>Hover On
+                            <ul>
+                                <li>Cursor changes to a finger.</li>
+                                <li>Blue outline draws a circle around color swatch.</li>
+                            </ul>
+                        </li>
+                        <li>Hover Off
+                            <ul>
+                                <li>Cursor reverts to default.</li>
+                                <li>If color swatch not selected, blue outline around color swatch changes from blue to black.
+                                <li>If color swatch already selected, black outline around color swatch remains the same.</li>
+                            </ul>
+                        </li>
+                        <li> Click
+                            <ul>
+                                <li>Blue outline around color swatch changes to black outline.
+                                    <ul>
+                                        <li>Black outline draws a circle around color swatch.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
 
-		<div>
-			<h3>Object 3 - Search Icon Button</h3>
-			<ul>
-				<li>Hover On</li>
-				<li>Hover Off</li>
-				<li>Click</li>
-			</ul>
-		</div>
+        <div class="section">
+            <h3>Loops & Modes</h3>
+            <ul>
+                <li>None</li>
+            </ul>
+        </div>
 
-		<h2>Rules</h2>
-		<div>
-			<h3>Object 1 - Toggle</h3>
-			<strong>Hover On</strong>
-			<ul>
-				<li>Cursor changes to a finger.</li>
-				<li>Background fades from navy blue to dark grey-blue.</li>
-			</ul>
-			<strong>Hover Off</strong>
-			<ul>
-				<li>Cursor reverts to default.</li>
-				<li>Background fades from dark grey-blue to navy blue.</li>
-			</ul>
-			<strong>Click "Dictionary" Button</strong>
-			<ul>
-				<li>Background slides left and fades from red to orange (250ms, ease-in-out).</li>
-				<li>Border and search icon color fade from red to orange (250ms, synchronized).</li>
-			</ul>
-			<strong>Click "Thesaurus" Button</strong>
-			<ul>
-				<li>Background slides right and fades from orange to red (250ms, ease-in-out).</li>
-				<li>Border and search icon color fade from orange to red (250ms, synchronized).</li>
-			</ul>
-		</div>
+        <div class="section image-container">
+            <img src="images/product-image-hover.gif" alt="Product Image Hover">
+            <img src="images/heart-icon.gif" alt="Product Image Hover">
+            <img src="images/color-swatches.gif" alt="Color Swatches">
+        </div>
+    </div>
+</div>
 
-		<div>
-			<h3>Object 2 - Search Bar</h3>
-			<strong>Hover On</strong>
-			<ul>
-				<li>Cursor changes to I-beam.</li>
-				<li>Shadow fades to light grey.</li>
-			</ul>
-			<strong>Hover Off</strong>
-			<ul>
-				<li>Cursor reverts to default.</li>
-				<li>Shadow fades to dark grey.</li>
-			</ul>
-			<strong>Click</strong>
-			<ul>
-				<li>No visual feedback (standard text input behavior).</li>
-			</ul>
-		</div>
-
-		<div>
-			<h3>Object 3 - Search Icon Button</h3>
-			<strong>Hover On</strong>
-			<ul>
-				<li>Cursor changes to a finger.</li>
-			</ul>
-			<strong>Hover Off</strong>
-			<ul>
-				<li>Cursor reverts to default.</li>
-			</ul>
-			<strong>Click</strong>
-			<ul>
-				<li>No visual feedback (executes search).</li>
-			</ul>
-		</div>
-
-		<h2>Feedback</h2>
-		<div>
-			<h3>Object 1 - Toggle</h3>
-			<ul>
-				<li>Color changes and sliding motion provide clear visual feedback.</li>
-			</ul>
-			<h3>Object 2 - Search Bar</h3>
-			<ul>
-				<li>Shadow and cursor feedback guide user interaction.</li>
-			</ul>
-			<h3>Object 3 - Search Icon Button</h3>
-			<ul>
-				<li>Cursor feedback indicates interactivity.</li>
-			</ul>
-		</div>
-
-		<h2>Loops & Modes</h2>
-		<div>
-			<h3>Object 1 - Toggle</h3>
-			<strong>Dictionary Mode (Orange)</strong>
-			<ul>
-				<li>Orange background, border, and search icon.</li>
-				<li>Returns dictionary definitions.</li>
-				<li>Persists until Thesaurus clicked.</li>
-			</ul>
-			<strong>Thesaurus Mode (Red)</strong>
-			<ul>
-				<li>Red background, border, and search icon.</li>
-				<li>Returns synonyms and antonyms.</li>
-				<li>Persists until Dictionary clicked.</li>
-			</ul>
-			<strong>Toggle Behavior</strong>
-			<ul>
-				<li>Unlimited toggles between modes.</li>
-				<li>Animation completes before new input accepted.</li>
-			</ul>
-		</div>
-
-		<div class="images">
-			<img src="images/toggle.gif" alt="Toggle microinteraction">
-			<img src="images/search-bar.gif" alt="Search bar microinteraction">
-		</div>
-	</div>
 </body>
-</html>
