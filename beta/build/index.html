@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beta Build - Anthropologie Product Image</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="card-container">
+        <a href="https://www.anthropologie.com/shop/farm-rio-long-sleeve-mock-neck-mesh-slim-midi-dress?color=080&type=STANDARD&quantity=1" target="_blank" class="product-card">
+            <div class="image-container">
+                <img src="../images/color1-default.webp" alt="Scarf Slip Maxi Dress" class="image-default">
+                
+                <img src="../images/color1-hover.webp" alt="Scarf Slip Maxi Dress - Alternate View" class="image-hover">
+                
+                <div class="quickshop-bar">
+                    <p>Quickshop</p>
+                </div>
+                
+                <button class="heart-button">
+                    <span class="heart-icon">♡</span>
+                    <div class="heart-fill"></div>
+                </button>
+            </div>
+            
+            <div class="product-info">
+                <div class="product-name">Farm Rio Long-Sleeve Mock-Neck Mesh Slim Midi Dress</div>
+                <div class="price">$188.00</div>
+                <div class="color-swatches">
+                    <div class="color-swatch selected" data-color="1">
+                        <img src="../images/color1-swatch.webp" alt="Color swatch 1">
+                    </div>
+                    <div class="color-swatch" data-color="2">
+                        <img src="../images/color2-swatch.webp" alt="Color swatch 2">
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div class="description">
+            <h1>Beta Build</h1>
+            <h2>Anthropologie Product Image Card</h2>
+            <h3>IDM 241 - Ingrid Burger</h3>
+        
+            <div class="section">
+                <h3>Triggers</h3>
+                <ul>
+                    <li>Object 1 - Product Image
+                        <ul>
+                            <li>Hover On</li>
+                            <li>Hover Off</li>
+                            <li>Click</li>
+                        </ul>
+                    </li>
+                    <li>Object 2 - Heart Button
+                        <ul>
+                            <li>Hover On</li>
+                            <li>Hover Off</li>
+                            <li>Click</li>
+                        </ul>
+                    </li>
+                    <li>Object 3 - Color Swatch Button
+                        <ul>
+                            <li>Hover On</li>
+                            <li>Hover Off</li>
+                            <li>Click</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="section">
+                <h3>Rules</h3>
+                <ul>
+                    <li>Object 1 - Product Image
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer.</li>
+                                    <li>Default product image fades out, hover image fades in.</li>
+                                    <li>Quickshop bar slides up from bottom of image.</li>
+                                    <li>Heart button scales in at top-right of image.</li>
+                                    <li>Product name text color changes to blue.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor reverts to default.</li>
+                                    <li>Hover image fades out, default image fades in.</li>
+                                    <li>Quickshop bar slides back down.</li>
+                                    <li>Heart button scales out.</li>
+                                    <li>Product name text color reverts to default.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>Clicking the product image navigates to the product detail page.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li>Object 2 - Heart Button
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer.</li>
+                                    <li>Heart outline color changes from black to blue.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor reverts to default.</li>
+                                    <li>Heart outline color reverts from blue to black.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>Heart outline toggles fill animation, filling blue from bottom upward.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li>Object 3 - Color Swatch Button
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer.</li>
+                                    <li>Blue outline grows out to appear around swatch.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor reverts to default.</li>
+                                    <li>If swatch not selected, outline reverts to black.</li>
+                                    <li>If swatch selected, black outline remains.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>Swatch becomes selected, black outline appears.</li>
+                                    <li>Previously selected swatch is deselected.</li>
+                                    <li>Product images update according to selected swatch.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="section">
+                <h3>Feedback</h3>
+                <ul>
+                    <li>Object 1 - Product Image
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer.</li>
+                                    <li>Default product image fades out, hover image fades in.</li>
+                                    <li>Quickshop bar slides up from bottom of image.</li>
+                                    <li>Heart button scales in at top-right of image.</li>
+                                    <li>Product name text color changes to blue.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor reverts to default.</li>
+                                    <li>Hover image fades out, default image fades in.</li>
+                                    <li>Quickshop bar slides back down.</li>
+                                    <li>Heart button scales out.</li>
+                                    <li>Product name text color reverts to default.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>Clicking the product image navigates to the product detail page.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li>Object 2 - Heart Button
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer.</li>
+                                    <li>Heart outline color changes from black to blue.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor reverts to default.</li>
+                                    <li>Heart outline color reverts from blue to black.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>Heart outline toggles fill animation, filling blue from bottom upward.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li>Object 3 - Color Swatch Button
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer.</li>
+                                    <li>Blue outline grows out to appear around swatch.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor reverts to default.</li>
+                                    <li>If swatch not selected, outline reverts to black.</li>
+                                    <li>If swatch selected, black outline remains.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>Swatch becomes selected, black outline appears.</li>
+                                    <li>Previously selected swatch is deselected.</li>
+                                    <li>Product images update according to selected swatch.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="section">
+                <h3>Loops & Modes</h3>
+                <ul>
+                    <li>None</li>
+                </ul>
+            </div>
+        </div>        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
