@@ -1,0 +1,146 @@
+/* FONT */
+@font-face {
+	font-display: swap;
+	font-family: 'DM Sans';
+	font-style: normal;
+	font-weight: 100 900;
+	src: url('../fonts/dm-sans-variable.ttf') format('truetype');
+}
+
+/* ROOT VARIABLES */
+:root {
+	--white: #fffef9;
+    --black: #1a1a1a;
+
+	--background-color: var(--white);
+	--foreground-color: var(--black);
+
+	--font-sans-serif: 'DM Sans', Helvetica, Arial, sans-serif;
+
+	--rhythm: 1rem;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-sans-serif);
+    background-color: var(--background-color);
+    color: var(--foreground-color);
+    line-height: 1.5;
+    padding: var(--rhythm);
+    font-size: 0.9rem;
+}
+
+.description {
+	max-width: 1400px; /* Wider to accommodate columns */
+	width: 100%;
+	margin: 0 auto;
+	padding: var(--rhythm);
+	border-radius: 8px;
+}
+
+/* Header section stays full width */
+h1 {
+    margin-bottom: 0.25rem;
+}
+
+h2 {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+/* Two-column layout for sections */
+.section {
+    margin-top: var(--rhythm);
+    padding-top: var(--rhythm);
+    border-top: 1px solid var(--foreground-color);
+    
+    /* Multi-column layout */
+    column-count: 2;
+    column-gap: 2rem;
+    column-rule: 1px solid rgba(26, 26, 26, 0.15);
+}
+
+/* Prevent sections from breaking across columns */
+.section > h3 {
+    column-span: all; /* Section titles span full width */
+    background: var(--background-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding-bottom: 0.25rem;
+}
+
+/* Prevent awkward breaks in list items */
+.section > ul > li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+ul {
+    margin-left: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+li {
+    margin-bottom: 0.3rem;
+}
+
+/* Keep nested content together */
+ul ul {
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+.image-container {
+    text-align: center;
+    column-count: 1; /* Override column layout for images */
+    margin-top: 1rem;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 0.5rem;
+    border-radius: 6px;
+    display: inline-block;
+    width: calc(33.33% - 1rem);
+    vertical-align: top;
+}
+
+/* Tablet: single column */
+@media (max-width: 1024px) {
+    .section {
+        column-count: 1;
+    }
+    
+    .description {
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container img {
+        width: calc(50% - 1rem);
+        margin: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container img {
+        width: 100%;
+        display: block;
+        margin: 1rem auto;
+    }
+}

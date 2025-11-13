@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Build - Anthropologie Product Image</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="description">
+        <h1>Beta Description</h1>
+        <h2>Anthropologie Product Image Card</h2>
+        <h3>IDM 241 - Ingrid Burger</h3>
+
+        <div class="section">
+            <h3>Triggers</h3>
+            <ul>
+                <li>Object 1 - Product Image
+                    <ul>
+                        <li>Hover On</li>
+                        <li>Hover Off</li>
+                        <li>Click</li>
+                    </ul>
+                </li>
+                <li>Object 2 - Heart Button
+                    <ul>
+                        <li>Hover On</li>
+                        <li>Hover Off</li>
+                        <li>Click</li>
+                    </ul>
+                </li>
+                <li>Object 3 - Color Swatch Button
+                    <ul>
+                        <li>Hover On</li>
+                        <li>Hover Off</li>
+                        <li>Click</li>
+                    </ul>
+                </li>
+                <li>Object 4 - Badge (New/Top Rated/Plus Sizes)
+                    <ul>
+                        <li>Card Hover On</li>
+                        <li>Card Hover Off</li>
+                    </ul>
+                </li>
+                <li>Object 5 - Image Gallery Navigation (Dots & Arrows)
+                    <ul>
+                        <li>Hover On</li>
+                        <li>Hover Off</li>
+                        <li>Click</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Rules</h3>
+            <ul>
+                <li> Object 1 - Product Image
+                    <ul>
+                        <li>Hover On
+                            <ul>
+                                <li>Cursor changes to pointer</li>
+                                <li>Default image fades out, hover image fades in</li>
+                                <li>Product image scales up to 1.15x (contained within container)</li>
+                                <li>Quickshop bar slides up from bottom</li>
+                                <li>Heart button scales in at top-right</li>
+                                <li>Product name text turns blue</li>
+                                <li>Gallery arrows fade in</li>
+                            </ul>
+                        </li>
+                        <li>Hover Off
+                            <ul>
+                                <li>Cursor reverts to default</li>
+                                <li>Hover image fades out, default image fades in</li>
+                                <li>Image scales back to 1x</li>
+                                <li>Quickshop bar slides back down</li>
+                                <li>Heart button scales out</li>
+                                <li>Product name text reverts to black</li>
+                                <li>Gallery arrows fade out</li>                                   
+                            </ul>
+                        </li>
+                        <li>Click
+                            <ul>
+                                <li>Navigates to product detail page</li>
+                            </ul>
+                        </li>
+                    </li>
+                    </ul>
+                <li> Object 2 - Heart Button
+                    <ul>
+                       <li> Hover On
+                            <ul>
+                                <li>Cursor changes to pointer</li>
+                                <li>Button scales up slightly (1.05x)</li>
+                            </ul>
+                        </li>
+                        <li> Hover Off
+                            <ul>
+                                <li>Cursor reverts to default</li>
+                                <li>Button returns to original scale</li>
+                            </ul>
+                        </li>
+                        <li> Click
+                            <ul>
+                                <li>Button scales up to 1.2x quickly, then back to 1x after animation completes</li>
+                                <li>Background changes from white to blue</li>
+                                <li>Heart outline stays white and fills bottom-to-top with white color</li>
+                                <li>After fill completes, button scales back down to 1x</li>
+                                <li>State persists (clicking again reverses the fill and returns background to white, outline to blue)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li> Object 3 - Color Swatch Button
+                    <ul>
+                       <li>Hover On
+                            <ul>
+                                <li>Cursor changes to a finger.</li>
+                                <li>Blue outline grows out around color swatch.</li>
+                            </ul>
+                        </li>
+                        <li>Hover Off
+                            <ul>
+                                <li>Cursor reverts to default</li>
+                                <li>If swatch not selected, outline reverts to black</li>
+                                <li>If swatch selected, black outline remains</li>
+                            </ul>
+                        </li>
+                        <li> Click
+                            <ul>
+                                <li>Blue outline around color swatch changes to black outline.
+                                    <ul>
+                                        <li>Blue ripple emanates from click point, expands and fades</li>
+                                        <li>Swatch becomes selected with black outline, previous swatch deselects</li>
+                                        <li>Product images fade out, update to new color, fade in</li>
+                                        <li>Gallery resets to first image</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Object 4 - Badge (New/Top Rated/Plus Sizes)
+                    <ul>
+                        <li>Card Hover On
+                            <ul>
+                                <li>Badge rotates 5-10 degrees clockwise and scales to 1.1x</li>
+                                <li>Text may pulse once</li>
+                                <li>Badge always visible in top-left corner with blue or white background and black text</li>
+                            </ul>
+                        </li>
+                        <li>Card Hover Off
+                            <ul>
+                                <li>Badge rotates back to original position</li>
+                                <li>Badge scales back to 1x</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Object 5 - Image Gallery Navigation (Dots & Arrows)
+                    <ul>
+                        <li>Hover On
+                            <ul>
+                                <li>Cursor changes to pointer</li>
+                                <li>Arrow becomes fully opaque and scales to 1.1x</li>
+                            </ul>
+                        </li>
+                        <li>Hover Off
+                            <ul>
+                                <li>Cursor reverts to default</li>
+                                <li>Arrow returns to semi-transparent state and original scale</li>
+                            </ul>
+                        </li>
+                        <li>Click
+                            <ul>
+                                <li>Arrow has press animation (scales to 0.95x then back)</li>
+                                <li>Current image fades out, next/previous image fades in (~300ms)</li>
+                                <li>Arrows only appear with 2+ images</li>
+                                <li>Arrows positioned on left/right edges of image, vertically centered</li>
+                                <li>Circular buttons (~30-35px) with semi-transparent white background</li>
+                                <li>Simple chevron icons (< and >)</li>
+                                <li>Left arrow hidden on first image, right arrow hidden on last image</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Feedback</h3>
+            <ul>
+                <li> Object 1 - Product Image
+                    <ul>
+                        <li>Hover On
+                            <ul>
+                                <li>Cursor changes to pointer</li>
+                                <li>Default image fades out, hover image fades in</li>
+                                <li>Product image scales up to 1.15x (contained within container)</li>
+                                <li>Quickshop bar slides up from bottom</li>
+                                <li>Heart button scales in at top-right</li>
+                                <li>Product name text turns blue</li>
+                                <li>Gallery arrows fade in</li>
+                            </ul>
+                        </li>
+                        <li>Hover Off
+                            <ul>
+                                <li>Cursor reverts to default</li>
+                                <li>Hover image fades out, default image fades in</li>
+                                <li>Image scales back to 1x</li>
+                                <li>Quickshop bar slides back down</li>
+                                <li>Heart button scales out</li>
+                                <li>Product name text reverts to black</li>
+                                <li>Gallery arrows fade out</li>                                   
+                            </ul>
+                        </li>
+                        <li>Click
+                            <ul>
+                                <li>Navigates to product detail page</li>
+                            </ul>
+                        </li>
+                    </li>
+                    </ul>
+                <li> Object 2 - Heart Button
+                    <ul>
+                       <li> Hover On
+                            <ul>
+                                <li>Cursor changes to pointer</li>
+                                <li>Button scales up slightly (1.05x)</li>
+                            </ul>
+                        </li>
+                        <li> Hover Off
+                            <ul>
+                                <li>Cursor reverts to default</li>
+                                <li>Button returns to original scale</li>
+                            </ul>
+                        </li>
+                        <li> Click
+                            <ul>
+                                <li>Button scales up to 1.2x quickly, then back to 1x after animation completes</li>
+                                <li>Background changes from white to blue</li>
+                                <li>Heart outline stays white and fills bottom-to-top with white color</li>
+                                <li>After fill completes, button scales back down to 1x</li>
+                                <li>State persists (clicking again reverses the fill and returns background to white, outline to blue)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li> Object 3 - Color Swatch Button
+                    <ul>
+                       <li>Hover On
+                            <ul>
+                                <li>Cursor changes to a finger.</li>
+                                <li>Blue outline grows out around color swatch.</li>
+                            </ul>
+                        </li>
+                        <li>Hover Off
+                            <ul>
+                                <li>Cursor reverts to default</li>
+                                <li>If swatch not selected, outline reverts to black</li>
+                                <li>If swatch selected, black outline remains</li>
+                            </ul>
+                        </li>
+                        <li> Click
+                            <ul>
+                                <li>Blue outline around color swatch changes to black outline.
+                                    <ul>
+                                        <li>Blue ripple emanates from click point, expands and fades</li>
+                                        <li>Swatch becomes selected with black outline, previous swatch deselects</li>
+                                        <li>Product images fade out, update to new color, fade in</li>
+                                        <li>Gallery resets to first image</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Object 4 - Badge (New/Top Rated/Plus Sizes)
+                    <ul>
+                        <li>Card Hover On
+                            <ul>
+                                <li>Badge rotates 5-10 degrees clockwise and scales to 1.1x</li>
+                                <li>Text may pulse once</li>
+                                <li>Badge always visible in top-left corner with blue or white background and black text</li>
+                            </ul>
+                        </li>
+                        <li>Card Hover Off
+                            <ul>
+                                <li>Badge rotates back to original position</li>
+                                <li>Badge scales back to 1x</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Object 5 - Image Gallery Navigation (Dots & Arrows)
+                    <ul>
+                        <li>Hover On
+                            <ul>
+                                <li>Cursor changes to pointer</li>
+                                <li>Arrow becomes fully opaque and scales to 1.1x</li>
+                            </ul>
+                        </li>
+                        <li>Hover Off
+                            <ul>
+                                <li>Cursor reverts to default</li>
+                                <li>Arrow returns to semi-transparent state and original scale</li>
+                            </ul>
+                        </li>
+                        <li>Click
+                            <ul>
+                                <li>Arrow has press animation (scales to 0.95x then back)</li>
+                                <li>Current image fades out, next/previous image fades in (~300ms)</li>
+                                <li>Arrows only appear with 2+ images</li>
+                                <li>Arrows positioned on left/right edges of image, vertically centered</li>
+                                <li>Circular buttons (~30-35px) with semi-transparent white background</li>
+                                <li>Simple chevron icons (< and >)</li>
+                                <li>Left arrow hidden on first image, right arrow hidden on last image</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Loops & Modes</h3>
+            <ul>
+                <li>None</li>
+            </ul>
+        </div>
+
+        <div class="section image-container">
+            <img src="images/color-swatches.gif" alt="Product Color Swatches">
+            <img src="images/heart-button.gif" alt="Product Heart Button">
+        </div>
+    </div>
+</div>
+
+</body>
