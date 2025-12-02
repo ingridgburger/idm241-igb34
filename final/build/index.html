@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Build - Anthropologie Product Image</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="card-container">
+        <a href="https://www.anthropologie.com/shop/farm-rio-long-sleeve-mock-neck-mesh-slim-midi-dress?color=080&type=STANDARD&quantity=1" target="_blank" class="product-card">
+            <div class="image-container">
+                <div class="badge">NEW</div>
+
+                <button class="gallery-arrow left" type="button" aria-label="Previous image">
+                    &lt;
+                </button>
+                <button class="gallery-arrow right" type="button" aria-label="Next image">
+                    &gt;
+                </button>
+
+                <img src="../images/color1-default.webp" alt="Long Sleeve Mock Neck Mesh Slim Midi Dress" class="image-default">
+                <img src="../images/color1-second.webp" alt="Long Sleeve Mock Neck Mesh Slim Midi Dress - Alternate View" class="image-hover">
+                
+                <div class="quickshop-bar">
+                    <p><strong>Quickshop</strong></p>
+                </div>
+                
+                <button class="heart-button" type="button">
+                    <span class="heart-icon">♥</span>
+                    <div class="heart-fill"></div>
+                </button>
+
+                <div class="gallery-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+            
+            <div class="product-info">
+                <div class="product-name">
+                    Farm Rio Long-Sleeve Mock-Neck Mesh Slim Midi Dress
+                </div>
+                <div class="price">$188.00</div>
+                <div class="color-swatches">
+                    <button class="color-swatch selected" data-color="1" type="button">
+                        <img src="../images/color1-swatch.webp" alt="Color swatch 1">
+                    </button>
+                    <button class="color-swatch" data-color="2" type="button">
+                        <img src="../images/color2-swatch.webp" alt="Color swatch 2">
+                    </button>
+                </div>
+            </div>
+        </a>
+
+        <div class="description">
+            <h1>Final Build</h1>
+            <h2>Anthropologie Product Image Card</h2>
+            <h3>IDM 241 - Ingrid Burger</h3>
+        
+            <div class="section">
+                <h3>Triggers</h3>
+                <ul>
+                    <li>Object 1 - Product Image
+                        <ul>
+                            <li>Hover On</li>
+                            <li>Hover Off</li>
+                            <li>Click</li>
+                        </ul>
+                    </li>
+                    <li>Object 2 - Heart Button
+                        <ul>
+                            <li>Hover On</li>
+                            <li>Hover Off</li>
+                            <li>Click</li>
+                        </ul>
+                    </li>
+                    <li>Object 3 - Color Swatch Button
+                        <ul>
+                            <li>Hover On</li>
+                            <li>Hover Off</li>
+                            <li>Click</li>
+                        </ul>
+                    </li>
+                    <li>Object 4 - Badge
+                        <ul>
+                            <li>Card Hover On</li>
+                            <li>Card Hover Off</li>
+                        </ul>
+                    </li>
+                    <li>Object 5 - Image Gallery Navigation
+                        <ul>
+                            <li>Hover On</li>
+                            <li>Hover Off</li>
+                            <li>Click</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        
+            <div class="section">
+                <h3>Rules</h3>
+                <ul>
+                    <li>Object 1 - Product Image
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer when hovering over the product card.</li>
+                                    <li>The current product image scales up from 1x to 1.15x over 0.45 seconds.</li>
+                                    <li>The Quickshop bar slides up into view from the bottom of the image over 0.3 seconds.</li>
+                                    <li>The product name text color transitions from black to blue over 0.3 seconds.</li>
+                                    <li>The badge in the top-left corner rotates slightly and scales up over 0.2 seconds.</li>
+                                    <li>The gallery dots move upward so they appear above the Quickshop bar over 0.3 seconds.</li>
+                                    <li>The gallery arrows remain visible on the left and right edges of the image (left arrow may be hidden on the first image, right arrow on the last image).</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor returns to the default arrow.</li>
+                                    <li>The product image scale returns from 1.15x back to 1x over 0.45 seconds.</li>
+                                    <li>The Quickshop bar slides back down and out of view over 0.3 seconds.</li>
+                                    <li>The product name text color transitions from blue back to black over 0.3 seconds.</li>
+                                    <li>The badge rotates back to its original upright position and returns to 1x scale over 0.2 seconds.</li>
+                                    <li>The gallery dots move back down toward the bottom edge of the image over 0.3 seconds.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>Clicking anywhere on the product card that is not a button (arrows, heart, or color swatches) opens the product detail page in a new browser tab.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            
+                    <li>Object 2 - Heart Button
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer when hovering over the heart button.</li>
+                                    <li>The heart button scales up slightly from 1x to 1.05x over 0.2 seconds.</li>
+                                    <li>The heart icon color transitions from black to blue over 0.2 to 0.3 seconds.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor returns to the default arrow.</li>
+                                    <li>The heart button returns from 1.05x back to its original 1x scale over 0.2 seconds.</li>
+                                    <li>If the heart is not saved, the icon color transitions back from blue to black over 0.2 to 0.3 seconds.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>When clicked, the heart button briefly scales up more and then settles back to its normal scale over 0.2 seconds.</li>
+                                    <li>The heart button toggles a saved state using a CSS class.</li>
+                                    <li>In the saved state, the border color transitions from white to blue over 0.3 seconds.</li>
+                                    <li>In the saved state, a blue fill inside the circular button rises upward from the bottom to the top over 0.3 seconds.</li>
+                                    <li>In the saved state, the heart icon color changes to white so it appears as a white heart on top of the blue fill.</li>
+                                    <li>Clicking the heart again removes the saved state: the blue fill animates from 100% height back to 0% height inside the circle over about 0.3 seconds, revealing the white background again.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            
+                    <li>Object 3 - Color Swatch Button
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer when hovering over a color swatch.</li>
+                                    <li>The swatch scales up from 1x to about 1.05x over about 0.2 seconds.</li>
+                                    <li>For an unselected swatch, the outline transitions to a blue hover outline over 0.2 seconds.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor returns to the default arrow.</li>
+                                    <li>For an unselected swatch, the outline transitions back from the blue hover outline to the default black outline and the swatch returns to 1x scale over 0.2 seconds.</li>
+                                    <li>The selected swatch keeps its thicker blue outline and slightly larger scale even when the cursor moves away.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>The clicked swatch becomes selected, gaining a thicker blue outline and a slightly larger scale over 0.2 seconds.</li>
+                                    <li>The previously selected swatch is deselected and returns to the default black outline and normal scale.</li>
+                                    <li>The product gallery resets to the first image for the newly selected color.</li>
+                                    <li>The gallery image updates by crossfading from the previous image to the new image using an overlay that fades out over 0.4 seconds, while the underlying images adjust their opacity over 0.45 seconds.</li>
+                                    <li>The gallery dots update to indicate the new current image position.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            
+                    <li>Object 4 - Badge
+                        <ul>
+                            <li>Card Hover On
+                                <ul>
+                                    <li>The circular badge remains visible in the top-left corner of the product image at all times.</li>
+                                    <li>When the card is hovered, the badge rotates slightly and scales up over 0.2 seconds.</li>
+                                    <li>The badge background remains blue with white text during the interaction.</li>
+                                </ul>
+                            </li>
+                            <li>Card Hover Off
+                                <ul>
+                                    <li>When the card is no longer hovered, the badge rotates back to its original upright position over 0.2 seconds.</li>
+                                    <li>The badge scale returns from its larger hover state back to 1x over 0.2 seconds.</li>
+                                    <li>The badge remains visible in the top-left corner before, during, and after hover.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            
+                    <li>Object 5 - Image Gallery Navigation
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer when hovering over the gallery arrows.</li>
+                                    <li>The arrow buttons scale up slightly over 0.2 seconds.</li>
+                                    <li>The arrow border and icon color transition from black to blue over 0.3 seconds.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor returns to the default arrow.</li>
+                                    <li>The arrow buttons return to their original scale over 0.2 seconds.</li>
+                                    <li>The arrow border and icon color transition back from blue to black over 0.3 seconds on a white circular background.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>When an arrow is clicked, it briefly scales up more and then returns to its normal size over about 0.2 seconds.</li>
+                                    <li>Clicking an arrow updates the gallery position to the next or previous image.</li>
+                                    <li>The current image crossfades into the new image using an overlay that fades out over 0.4 seconds while the underlying images update and apply their own opacity transitions of 0.45 seconds.</li>
+                                    <li>The left arrow is hidden (opacity 0 and no pointer events) when there is no previous image; the right arrow is hidden when there is no next image.</li>
+                                    <li>The gallery dots update so the active dot always matches the current image in the sequence.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>                       
+        
+            <div class="section">
+                <h3>Feedback</h3>
+                <ul>
+                    <li>Object 1 - Product Image
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer when hovering over the product card.</li>
+                                    <li>The current product image scales up from 1x to 1.15x over 0.45 seconds.</li>
+                                    <li>The Quickshop bar slides up into view from the bottom of the image over 0.3 seconds.</li>
+                                    <li>The product name text color transitions from black to blue over 0.3 seconds.</li>
+                                    <li>The badge in the top-left corner rotates slightly and scales up over 0.2 seconds.</li>
+                                    <li>The gallery dots move upward so they appear above the Quickshop bar over 0.3 seconds.</li>
+                                    <li>The gallery arrows remain visible on the left and right edges of the image (left arrow may be hidden on the first image, right arrow on the last image).</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor returns to the default arrow.</li>
+                                    <li>The product image scale returns from 1.15x back to 1x over 0.45 seconds.</li>
+                                    <li>The Quickshop bar slides back down and out of view over 0.3 seconds.</li>
+                                    <li>The product name text color transitions from blue back to black over 0.3 seconds.</li>
+                                    <li>The badge rotates back to its original upright position and returns to 1x scale over 0.2 seconds.</li>
+                                    <li>The gallery dots move back down toward the bottom edge of the image over 0.3 seconds.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>Clicking anywhere on the product card that is not a button (arrows, heart, or color swatches) opens the product detail page in a new browser tab.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            
+                    <li>Object 2 - Heart Button
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer when hovering over the heart button.</li>
+                                    <li>The heart button scales up slightly from 1x to 1.05x over 0.2 seconds.</li>
+                                    <li>The heart icon color transitions from black to blue over 0.2 to 0.3 seconds.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor returns to the default arrow.</li>
+                                    <li>The heart button returns from 1.05x back to its original 1x scale over 0.2 seconds.</li>
+                                    <li>If the heart is not saved, the icon color transitions back from blue to black over 0.2 to 0.3 seconds.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>When clicked, the heart button briefly scales up more and then settles back to its normal scale over 0.2 seconds.</li>
+                                    <li>The heart button toggles a saved state using a CSS class.</li>
+                                    <li>In the saved state, the border color transitions from white to blue over 0.3 seconds.</li>
+                                    <li>In the saved state, a blue fill inside the circular button rises upward from the bottom to the top over 0.3 seconds.</li>
+                                    <li>In the saved state, the heart icon color changes to white so it appears as a white heart on top of the blue fill.</li>
+                                    <li>Clicking the heart again removes the saved state: the blue fill animates from 100% height back to 0% height inside the circle over about 0.3 seconds, revealing the white background again.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            
+                    <li>Object 3 - Color Swatch Button
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer when hovering over a color swatch.</li>
+                                    <li>The swatch scales up from 1x to about 1.05x over about 0.2 seconds.</li>
+                                    <li>For an unselected swatch, the outline transitions to a blue hover outline over 0.2 seconds.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor returns to the default arrow.</li>
+                                    <li>For an unselected swatch, the outline transitions back from the blue hover outline to the default black outline and the swatch returns to 1x scale over 0.2 seconds.</li>
+                                    <li>The selected swatch keeps its thicker blue outline and slightly larger scale even when the cursor moves away.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>The clicked swatch becomes selected, gaining a thicker blue outline and a slightly larger scale over 0.2 seconds.</li>
+                                    <li>The previously selected swatch is deselected and returns to the default black outline and normal scale.</li>
+                                    <li>The product gallery resets to the first image for the newly selected color.</li>
+                                    <li>The gallery image updates by crossfading from the previous image to the new image using an overlay that fades out over 0.4 seconds, while the underlying images adjust their opacity over 0.45 seconds.</li>
+                                    <li>The gallery dots update to indicate the new current image position.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            
+                    <li>Object 4 - Badge
+                        <ul>
+                            <li>Card Hover On
+                                <ul>
+                                    <li>The circular badge remains visible in the top-left corner of the product image at all times.</li>
+                                    <li>When the card is hovered, the badge rotates slightly and scales up over 0.2 seconds.</li>
+                                    <li>The badge background remains blue with white text during the interaction.</li>
+                                </ul>
+                            </li>
+                            <li>Card Hover Off
+                                <ul>
+                                    <li>When the card is no longer hovered, the badge rotates back to its original upright position over 0.2 seconds.</li>
+                                    <li>The badge scale returns from its larger hover state back to 1x over 0.2 seconds.</li>
+                                    <li>The badge remains visible in the top-left corner before, during, and after hover.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+            
+                    <li>Object 5 - Image Gallery Navigation
+                        <ul>
+                            <li>Hover On
+                                <ul>
+                                    <li>Cursor changes to a pointer when hovering over the gallery arrows.</li>
+                                    <li>The arrow buttons scale up slightly over 0.2 seconds.</li>
+                                    <li>The arrow border and icon color transition from black to blue over 0.3 seconds.</li>
+                                </ul>
+                            </li>
+                            <li>Hover Off
+                                <ul>
+                                    <li>Cursor returns to the default arrow.</li>
+                                    <li>The arrow buttons return to their original scale over 0.2 seconds.</li>
+                                    <li>The arrow border and icon color transition back from blue to black over 0.3 seconds on a white circular background.</li>
+                                </ul>
+                            </li>
+                            <li>Click
+                                <ul>
+                                    <li>When an arrow is clicked, it briefly scales up more and then returns to its normal size over about 0.2 seconds.</li>
+                                    <li>Clicking an arrow updates the gallery position to the next or previous image.</li>
+                                    <li>The current image crossfades into the new image using an overlay that fades out over 0.4 seconds while the underlying images update and apply their own opacity transitions of 0.45 seconds.</li>
+                                    <li>The left arrow is hidden (opacity 0 and no pointer events) when there is no previous image; the right arrow is hidden when there is no next image.</li>
+                                    <li>The gallery dots update so the active dot always matches the current image in the sequence.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>                                
+
+    <script src="script.js"></script>
+</body>
+</html>

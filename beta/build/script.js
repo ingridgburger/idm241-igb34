@@ -12,7 +12,6 @@ heartButton.onclick = function(e) {
 
 
 // COLOR SWATCH FUNCTIONALITY
-// COLOR SWATCH FUNCTIONALITY
 
 const imageDefault = document.querySelector('.image-default');
 const imageHover = document.querySelector('.image-hover');
