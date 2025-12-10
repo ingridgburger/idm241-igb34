@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study · Anthropologie Product Card Microinteractions</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="hero-inner">
+            <img
+                src="images/final.gif"
+                alt="Animated preview of the final Anthropologie product card microinteractions"
+                class="hero-image"
+            >
+        </div>
+
+        <div class="page-header-inner">
+            <p class="case-label">IDM 241 · Microinteractions</p>
+            <h1 class="case-title">Anthropologie Product Card Microinteractions</h1>
+            <p class="case-subtitle">
+                Recreating and enhancing an existing e commerce product card
+            </p>
+        </div>
+
+        <div class="hero-actions">
+            <a
+                href="https://idm241-igb34.netlify.app/final/build/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button-link"
+            >
+                View Final Interactive Build
+            </a>
+        </div>
+    </header>
+
+    <main class="case-main">
+        <article class="case-article">
+
+            <section class="case-section" id="overview">
+                <h2>The Overview</h2>
+                <p>
+                    For this microinteractions project for IDM 241, I analyzed, replicated, and improved an existing product card from Anthropologie’s website. This process included reconstructing the original card and documenting its interactions in code, then redesigning the card to enhance usability, motion, and feedback through both improvements to existing and new microinteractions.
+                </p>
+                <p>
+                    My final solution expands the capabilities a user has from a shop category page without leaving the card. I added a multi-image gallery controlled by navigation arrows and pagination dots, redesigned the favoriting interaction to offer more interactivity, and improved the quickshop and item badge behaviors. These changes turned a more static browsing product card into a more engaging interactive experience that aligns well with Anthropologie’s brand and encourages more exciting product exploration.
+                </p>
+            </section>
+
+            <section class="case-section" id="context">
+                <h2>Context and Challenge</h2>
+
+                <h3>Background</h3>
+                <p>
+                    This project took place over a 10 week term for IDM 241. As a current sales associate at Anthropologie, I was motivated to explore the microinteractions on a website for a brand I feel connected to. I chose to work with a product card because it serves as a key moment in the digital shopping experience, contributing to whether a customer explores an item further or disengages.
+                </p>
+
+                <div class="media-row">
+                    <div class="media-item">
+                        <img
+                            src="images/anthro-site.webp"
+                            alt="Original Anthropologie product card on the live site"
+                            class="process-image"
+                        >
+                        <p class="media-caption">
+                            Original Anthropologie product card on the live site, which I used as the reference for rebuilding and analysis.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="media-button-wrap">
+                    <a
+                        href="https://www.anthropologie.com/shop/farm-rio-long-sleeve-mock-neck-mesh-slim-midi-dress?color=080&type=STANDARD&quantity=1"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="button-link"
+                    >
+                        View Original Product Card
+                    </a>
+                </div>
+
+                <h3>The Problem</h3>
+                <p>
+                    The original Anthropologie product card provided limited and abrupt interactions. Features included some interactivity, but feedback was minimal and users were only able to view two images before navigating to another page. This lack of dynamicness missed opportunities to create small moments of joy and offer more product information to the user.
+                </p>
+
+                <h3>Goals and Objectives</h3>
+                <p>
+                    Throughout this project, my primary goals and objectives included:
+                </p>
+                <ul>
+                    <li>Adding meaningful functionality to the product card without overwhelming it</li>
+                    <li>Making transitions smoother and more intentional</li>
+                    <li>Increasing interactivity to encourage users to explore products</li>
+                </ul>
+                <p>
+                    This project’s success was defined by how well the revised microinteractions improved clarity, usability, and value while maintaining functionality and brand consistency.
+                </p>
+            </section>
+
+            <section class="case-section" id="process">
+                <h2>Process and Insight</h2>
+
+                <h3>Alpha: Recreating and Documenting the Original Card</h3>
+                <p>
+                    I began this project by rebuilding the product card exactly to how it appears on Anthropologie’s website. In the original version, each interaction took place instantly, with no motion or transitional feedback. Hovering over the card caused the image to switch immediately, the quickshop bar and heart icon appeared right away, and the product name changed color without easing. The color swatches also had hover and selection outlines, but the change was abrupt and lacked animation. Hovering away removed everything just as instantly.
+                </p>
+                <p>
+                    By writing out the triggers, rules, and feedback for this version, I gained a clearer understanding of what was missing. Although the card provided basic interaction, it did not guide the user or offer more dynamic visual confirmation. It served as a functional preview, but did not promote meaningful or engaging interaction.
+                </p>
+
+                <div class="media-row">
+                    <div class="media-item">
+                        <img
+                            src="images/alpha.gif"
+                            alt="Alpha microinteraction animation"
+                            class="process-image"
+                        >
+                        <p class="media-caption">
+                            Alpha build: original card with instant hover changes and no transitional motion.
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Beta: Adding Motion and Introducing Feedback</h3>
+                <p>
+                    In the beta version, I focused on improving how the existing elements behaved rather than adding new features. The goal was to make interactions feel more deliberate. I replaced instant changes with smooth transitions, including a fade between images, the quickshop bar sliding up, and the heart icon scaling into view. The product name faded to blue instead of a sudden switch, giving it a more refined presence.
+                </p>
+                <p>
+                    I also introduced new forms of visual feedback. The heart button gained a click animation that filled with blue from the bottom upward, offering clear communication of when an item was saved. The color swatches were refined to behave more intentionally by adding easing to their selection state so the outline appeared with motion rather than a snap change. These updates helped the card feel smoother and more responsive, giving the user clearer feedback as they explored product options.
+                </p>
+
+                <div class="media-row">
+                    <div class="media-item">
+                        <img
+                            src="images/beta.gif"
+                            alt="Beta hover and save animation"
+                            class="process-image"
+                        >
+                        <p class="media-caption">
+                            Beta build: card hover with image fade, sliding quickshop bar, and selecting the heart to save the item.
+                        </p>
+                    </div>
+                
+                    <div class="media-item">
+                        <img
+                            src="images/beta2.gif"
+                            alt="Beta color swatch animation"
+                            class="process-image"
+                        >
+                        <p class="media-caption">
+                            Beta build: switching color swatches, with smoother outline changes and updated product imagery.
+                        </p>
+                    </div>
+                </div>
+
+                <h3>Final: Expanding Functionality and Encouraging Exploration</h3>
+                <p>
+                    In the final version, I focused on extending the card’s capabilities and deepening microinteraction feedback. I introduced a multi-image gallery directly on the product card, which allowed users to browse multiple photos without leaving the page. The gallery used left and right arrows for navigation, and pagination dots acted as indicators for which image was active. The arrows responded to hover and click, and the gallery images transitioned through a timed crossfade that made browsing feel smoother and more exploratory.
+                </p>
+                <p>
+                    I also redesigned the card’s badge so it became a more integrated part of the interaction. Instead of remaining static, it rotated and scaled along with the rest of the card on hover, while still maintaining its presence at all times. I refined the heart button from the beta by improving the scaling behaviors and keeping a consistent saved state. The color swatches not only updated the product image, but also reset the gallery when a new color was selected, helping the transition feel more purposeful.
+                </p>
+                <p>
+                    These changes expanded what a user could do on the card itself, while keeping everything visually consistent with Anthropologie’s existing style. The final version encourages users to stay on the product card longer, explore images more easily, and receive clearer feedback on their actions without needing to open a new page.
+                </p>
+
+                <div class="media-row">
+                    <div class="media-item">
+                        <img
+                            src="images/final.gif"
+                            alt="Final hover and gallery animation"
+                            class="process-image"
+                        >
+                        <p class="media-caption">
+                            Final build: hovering the card, saving the product with the heart, and clicking through the image gallery using arrows.
+                        </p>
+                    </div>
+                
+                    <div class="media-item">
+                        <img
+                            src="images/final2.gif"
+                            alt="Final color swatch animation"
+                            class="process-image"
+                        >
+                        <p class="media-caption">
+                            Final build: switching color swatches, resetting the gallery, and updating images with refined motion and outlines.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="case-section" id="solution">
+                <h2>The Solution</h2>
+                <p>
+                    The redesigned product card strengthens the browsing experience by offering more information and interaction without forcing the user to open a new page. It allows exploration through motion and state changes while still feeling simple and true to Anthropologie’s visual voice.
+                </p>
+                <p>
+                    A user can now browse multiple images, choose colors, save products with a clear confirmation, and experience small branded motions that guide the interaction. These enhancements do not overwhelm the card or distract from the product. Instead, they add clarity, encourage decision making, and support a more playful but still practical shopping experience.
+                </p>
+            </section>
+
+            <section class="case-section" id="results">
+                <h2>The Results</h2>
+                <p>
+                    The final version more successfully represents Anthropologie’s brand through lively and thoughtful interactions. Small transitions communicate value, and added functionality allows the user to gather more information before clicking into the product page. This shift encourages deeper engagement while keeping the card clean and approachable.
+                </p>
+                <p>
+                    Through this process, I strengthened my ability to document microinteractions clearly, apply consistent motion and timing, and design feedback that supports usability. If I continued building on this project, I would focus on refining the visual layout and typography of the card to better match the enhanced functionality.
+                </p>
+            </section>
+
+        </article>
+    </main>
+
+    <footer class="page-footer">
+        <p>Case study by Ingrid Burger · IDM 241</p>
+    </footer>
+</body>
+</html>

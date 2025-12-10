@@ -247,14 +247,14 @@ body {
 .price {
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 
-/* COLOR SWATCHES */
+/*COLOR SWATCHES*/
 .color-swatches {
     display: flex;
     gap: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 .color-swatch {
@@ -324,6 +324,12 @@ body {
 
 .product-card:hover .badge {
     transform: rotate(-15deg) scale(1.1);
+}
+
+.product-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
 }
 
 /* IMAGE GALLERY */
